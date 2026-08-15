@@ -1,3 +1,26 @@
+how it works:
+.feature file
+   ↓
+Cucumber
+   ↓
+Mapping Given / When / Then
+   ↓
+Step Definition (.ts)
+   ↓
+Playwright
+   ↓
+Browser
+   ↓
+Web Application
+
+
 create test cases:
 step 1: create a feature file
 step 2: create a cucumber.json file under project folder
+step 3: edit package.json to convert default language JS to TS
+step 4: create a step file
+
+note: 
+get into cucumber extension installation page again, it shows up paths of feature files which is where we have to keep feature files.
+OR
+settings -> settings -> search cucumber -> select Extensions: cucumber -> Edit in settings.json -> copy Related Path of feature folder and step folder -> add to settings

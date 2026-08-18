@@ -21,11 +21,6 @@ step 3: edit package.json to convert default language JS to TS
 step 4: run in VScode terminal $ npm test         //it looks at feature and step files
 step 5: create a step file
 
-note: 
-get into cucumber extension installation page again, it shows up paths of feature files which is where we have to keep feature files.
-OR
-settings -> settings -> search cucumber -> select Extensions: cucumber -> Edit in settings.json -> copy Related Path of feature folder and step folder -> add to settings
-
 example of cucumber.json:
 {
     "default": {
@@ -81,4 +76,13 @@ TypeError: Cannot read properties of undefined (reading 'fileExists')
 solution: downgrade TypeScript 7.0.2 to TS 6
 $ npm install -D typescript@6.0.3
 $ npm list typescript   //verify
+
+
+hover on steps in the feature file, it shows 'cucumber.undefined-step' in tooltip, to solve it:
+get into cucumber extension installation page again, it shows up paths of feature files under "cucumber.features" which is where we have to keep feature files,
+and it shows paths of steps files under "cucumber.glue".
+OR
+settings -> settings -> search cucumber -> select Extensions: cucumber -> Edit in settings.json -> copy Related Path of feature folder and step folder -> add to 
+"cucumber.features" and "cucumber.glue".
+re-open feature file, hover again, a wavy underline shouldnt be showing anymore.
 

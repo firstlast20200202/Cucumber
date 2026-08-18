@@ -37,7 +37,7 @@ example of cucumber.json:
         "paths": [
             "src/test/features/"
         ],
-        "publishQuiet": true,
+        //"publishQuiet": true,
         "dryRun": true
         "require": [
             "src/test/steps/*.ts"

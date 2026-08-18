@@ -39,6 +39,12 @@ example of cucumber.json:
         ],
         "publishQuiet": true,
         "dryRun": true
+        "require": [
+            "src/test/steps/*.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"      //to solve the ts-import statement error
+        ]
     }
 
 an example of "async-await":

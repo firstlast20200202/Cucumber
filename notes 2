@@ -18,7 +18,7 @@ create test cases:
 step 1: create a feature file
 step 2: create a cucumber.json file for configuration under project folder 
 step 3: edit package.json to convert default language JS to TS
-        $ npm test
+        $ npm test         //it looks at feature and step files
 step 4: create a step file
 
 note: 

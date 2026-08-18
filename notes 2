@@ -75,3 +75,10 @@ we write Playwright
 await page.goto()
    ↓
 Browser
+
+there's a known compatibility issue between ts-node and TypeScript 7:
+when a project uses a recent version of TypeScript 7 together with ts-node, running the application or test framework can fail with an error such as:
+TypeError: Cannot read properties of undefined (reading 'fileExists')
+
+
+

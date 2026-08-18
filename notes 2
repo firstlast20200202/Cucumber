@@ -25,3 +25,47 @@ note:
 get into cucumber extension installation page again, it shows up paths of feature files which is where we have to keep feature files.
 OR
 settings -> settings -> search cucumber -> select Extensions: cucumber -> Edit in settings.json -> copy Related Path of feature folder and step folder -> add to settings
+
+example of cucumber.json:
+{
+    "default": {
+        //make sure that one step starts after the previous one finishes (async function + await)
+        //this setting is only for auto-generated snippets instead of existing steps
+        "formatOptions": {
+            "snippetInterface": "async-await"   
+        },
+        "paths": [
+            "src/test/features/"
+        ],
+        "publishQuiet": true,
+        "dryRun": true
+    }
+
+an example of "async-await":
+if feature file is as below:
+Feature: Login
+Scenario: Successful login
+  Given I am on the login page
+  When I enter my username
+  Then I should see the homepage
+
+and there's no step Definition of 'Given I am on the login page', when run $ npm test, cucumber would generate:
+Given('I am on the login page', async function () {
+  // Write code here
+});
+
+and we can add playwright into it:
+Given('I am on the login page', async function () {
+  await this.page.goto('/login');
+});
+
+which is this workflow:
+Cucumber
+   ↓
+Generate async Step Definition
+   ↓
+we write Playwright
+   ↓
+await page.goto()
+   ↓
+Browser

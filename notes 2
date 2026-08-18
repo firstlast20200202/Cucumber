@@ -14,12 +14,12 @@ Browser
 Web Application
 
 
-create test cases:
+create first test case:
 step 1: create a feature file
 step 2: create a cucumber.json file for configuration under project folder 
 step 3: edit package.json to convert default language JS to TS
-        $ npm test         //it looks at feature and step files
-step 4: create a step file
+step 4: run in VScode terminal $ npm test         //it looks at feature and step files
+step 5: create a step file
 
 note: 
 get into cucumber extension installation page again, it shows up paths of feature files which is where we have to keep feature files.

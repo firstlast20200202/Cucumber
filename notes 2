@@ -76,8 +76,8 @@ await page.goto()
    ↓
 Browser
 
-there's a known compatibility issue between ts-node and TypeScript 7:
-when a project uses a recent version of TypeScript 7 together with ts-node, running the application or test framework can fail with an error such as:
+known issue of compatibility between ts-node and TypeScript 7:
+running the application or test framework (say, $ npm test) can fail with an error as below:
 TypeError: Cannot read properties of undefined (reading 'fileExists')
 
 

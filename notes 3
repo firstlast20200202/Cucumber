@@ -5,4 +5,4 @@ tips:
 1. add Ortoni Studio as an extension to Chrome, which would make it eaiser to catch frontend elements
 2. right click in feature file, select 'Go to Definition', it should direct to the mapping steps in mapping steps file
 3. if test data is more than one group, we can create an example table in the feature file
-4. in output, AAAA--AAAA-- means ambigious, UUUU means undefined
+4. in output, AAAA--AAAA-- means ambiguous, UUUU means undefined

@@ -2,3 +2,4 @@ add Ortoni Studio as an extension to Chrome, which would make it eaiser to catch
 
 create steps:
 assertion syntax would be depending on which library we use
+right click in feature file, select 'Go to Definition', it should direct to the mapping steps in mapping steps file

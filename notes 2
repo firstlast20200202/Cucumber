@@ -33,7 +33,7 @@ example of cucumber.json:
             "src/test/features/"
         ],
         //"publishQuiet": true,
-        "dryRun": true
+        "dryRun": true              //check whether all the steps are defined and valid
         "require": [
             "src/test/steps/*.ts"
         ],

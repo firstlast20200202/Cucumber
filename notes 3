@@ -1,3 +1,4 @@
 add Ortoni Studio as an extension to Chrome, which would be eaiser to catch frontend element 
 
-create steps
+create steps:
+assertion syntax would be depending on which library we use

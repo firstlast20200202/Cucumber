@@ -86,3 +86,15 @@ settings -> settings -> search cucumber -> select Extensions: cucumber -> Edit i
 "cucumber.features" and "cucumber.glue".
 re-open feature file, hover again, a wavy underline shouldnt be showing anymore.
 
+
+"dryRun": 
+when = true, it only checks whether all the steps are defined and valid, it doesnt executes them;
+when = false, it checks whether all the steps are defined and valid, AS WELL AS executes them.
+in practice set it to false.
+when would it be a problem if it set to false? 
+it's when step definition is not properly written, for example:
+   Given('I open the login page', async function () {
+     await this.page.goto('/login');
+   });
+if this.page was never initialized, it would show 'this.page is undefined' and get a TypeError
+

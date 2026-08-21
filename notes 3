@@ -6,3 +6,6 @@ tips:
 2. right click in feature file, select 'Go to Definition', it should direct to the mapping steps in mapping steps file
 3. if test data is more than one group, we can create an example table in the feature file
 4. in output, AAAA--AAAA-- means ambiguous, UUUU means undefined
+
+it seems that duplicated steps in different steps files would make the execution not work properly. because Cucumber matches a Gherkin step against the 
+step definition text/expression, not against the filename. i nthis case, two or more step definitions match the same Gherkin step.

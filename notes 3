@@ -9,4 +9,4 @@ tips:
 
 it seems that duplicated steps in different steps files would make the execution not work properly. because Cucumber matches a Gherkin step against the 
 step definition text/expression, not against the filename. in this case, two or more step definitions match the same Gherkin step. to solve the problem,
-create a hooks.ts file under src/hooks folder.
+create a hooks.ts file as well as other .ts files under src/hooks folder.
